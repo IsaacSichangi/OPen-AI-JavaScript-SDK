@@ -1,4 +1,4 @@
-let openApi = new OpenApi("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");
+let openApi = new OpenApi("");
 openApi.listModels().then(function (value) {
 
     console.log(value);
