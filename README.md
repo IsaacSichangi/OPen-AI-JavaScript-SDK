@@ -72,6 +72,7 @@ openAi.listModels().then(function (value) {
 
 });
 ```
+
 ### Retrieve Model
 
 Retrieves a model instance, providing basic information about the model such as the owner and permissioning.
