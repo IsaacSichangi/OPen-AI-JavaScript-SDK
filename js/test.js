@@ -1,4 +1,4 @@
-let openApi = new OpenApi("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");
+let openApi = new Openai("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");
 /**
 openApi.listModels().then(function (value) {
 
@@ -9,7 +9,7 @@ openApi.listModels().then(function (value) {
  **/
 
 /**
-openApi.retrieveModel(OpenApi.TEXT_DAVINCI_003).then(function (value) {
+openApi.retrieveModel(Openai.TEXT_DAVINCI_003).then(function (value) {
 
     alert(JSON.stringify(value));
 
@@ -20,7 +20,7 @@ openApi.retrieveModel(OpenApi.TEXT_DAVINCI_003).then(function (value) {
 
 
 /**
-openApi.createCompletion(OpenApi.TEXT_DAVINCI_001, "capital of uganda is").then(function (value) {
+openApi.createCompletion(Openai.TEXT_DAVINCI_001, "capital of uganda is").then(function (value) {
 
 
     alert(JSON.stringify(value));
@@ -31,7 +31,7 @@ openApi.createCompletion(OpenApi.TEXT_DAVINCI_001, "capital of uganda is").then(
 
 /**
 messages = [{role: "user", content: "Hello!"}];
-openApi.createChatCompletion(OpenApi.GPT_3_5_TURBO, messages).then(function (value) {
+openApi.createChatCompletion(Openai.GPT_3_5_TURBO, messages).then(function (value) {
 
 
     alert(JSON.stringify(value));
@@ -41,7 +41,7 @@ openApi.createChatCompletion(OpenApi.GPT_3_5_TURBO, messages).then(function (val
 **/
 
 /**
-openApi.createEdit(OpenApi.TEXT_DAVINCI_EDIT_001, "What day of the wek is it?", "Fix the spelling mistakes").then(function (value) {
+openApi.createEdit(Openai.TEXT_DAVINCI_EDIT_001, "What day of the wek is it?", "Fix the spelling mistakes").then(function (value) {
 
     alert(JSON.stringify(value));
 

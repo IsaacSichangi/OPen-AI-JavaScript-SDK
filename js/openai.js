@@ -5,11 +5,11 @@
  */
 
 /**
- * @description A class which contains the functionality to connect to the OpenApi APIS
- * @class OpenApi
+ * @description A class which contains the functionality to connect to the Openai APIS
+ * @class Openai
  * @author Isaac Sichangi
  */
-class OpenApi {
+class Openai {
 
     baseUrl = "https://api.openai.com";
      ///v1/chat/completions
@@ -526,7 +526,7 @@ class OpenApi {
      * @returns {Promise<any>}
      */
 
-    async createTranscription(file, model = OpenApi.WHISPER_1, prompt = null, response_format = "json", temperature = 0, language = null){
+    async createTranscription(file, model = Openai.WHISPER_1, prompt = null, response_format = "json", temperature = 0, language = null){
 
         try {
 
@@ -578,7 +578,7 @@ class OpenApi {
      * @param temperature
      * @returns {any}
      */
-    async createTranlsation (file, model = OpenApi.WHISPER_1, prompt = null, response_format = "json", temperature = 0){
+    async createTranlsation (file, model = Openai.WHISPER_1, prompt = null, response_format = "json", temperature = 0){
 
         try {
 
@@ -815,7 +815,7 @@ class OpenApi {
      * @param suffix
      * @returns {Promise<any>}
      */
-    async createFineTune(training_file, validation_file = null, model = OpenApi.CURIE, n_epochs = 4, batch_size = null, learning_rate_multiplier = null, prompt_loss_weight = 0.01, compute_classification_metrics = null, classification_n_classes = null, classification_positive_class = null, classification_betas = null, suffix = null
+    async createFineTune(training_file, validation_file = null, model = Openai.CURIE, n_epochs = 4, batch_size = null, learning_rate_multiplier = null, prompt_loss_weight = 0.01, compute_classification_metrics = null, classification_n_classes = null, classification_positive_class = null, classification_betas = null, suffix = null
 
     ){
 
