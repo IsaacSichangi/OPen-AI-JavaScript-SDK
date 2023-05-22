@@ -1019,7 +1019,7 @@ class Openai {
     }
 
     /**
-     *
+     * Classifies if text violates OpenAI's Content Policy
      * @param input
      * @param model
      * @returns {Promise<any>}
