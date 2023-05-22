@@ -7,7 +7,15 @@ Works with Javascript ***ES6*** syntax
 Ensure that you have generated your **API KEY** from Open AI and **kindly note** 
 client side Javascript does not support loading values from environment variables.
 
-### initialize api
+### Installation
+Add the Open Ai library to your site.
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/IsaacSichangi/OPen-AI-JavaScript-SDK@master/js/openai.js"></script>
+```
+
+
+### Initialize Api
 
 ```javascript
 let openAi = new Openai("API KEY");
