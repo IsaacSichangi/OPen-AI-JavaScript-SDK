@@ -245,7 +245,7 @@ openAi.createTranscription(file, model = Openai.WHISPER_1, prompt = null, respon
 
 ### Create Tranlsation
 
-Translates audio into into English.
+Translates audio into English.
 https://platform.openai.com/docs/api-reference/audio/create
 
 ```javascript
@@ -267,7 +267,7 @@ Returns a list of files that belong to the user's organization.
 https://platform.openai.com/docs/api-reference/files/list
 
 ```javascript
-oenAi.listFiles()
+openAi.listFiles()
 .then(function (value) {
 
     //returns json
